@@ -8,10 +8,20 @@
 
 #import "ViewController.h"
 #import "detatilViewController.h"
+#import "WQLPaoMaView.h"
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+{
+    WQLPaoMaView *paoma;
+}
+
 @property (nonatomic,strong) NSTimer *timer ;
 @property (nonatomic,assign)CGFloat hightcell;
 @property(nonatomic,strong)NSArray * arraytext;
+
+
+
+@property (nonatomic,strong)UILabel * AD;
 @end
 
 static CGFloat cellhight = 40.0;
@@ -32,8 +42,13 @@ static CGFloat cellhight = 40.0;
     
     [self startTimer];
     
-    // Do any additional setup after loading the view, typically from a nib.
+    paoma = [[WQLPaoMaView alloc]initWithFrame:CGRectMake(0, 300, self.view.frame.size.width, 50) withTitle:@"全场卖两块，买啥都两块，两块钱，你买不了吃亏，两块钱，你买不了上当，真正的物有所值。拿啥啥便宜 买啥啥不贵，都两块，买啥都两块，全场卖两块，随便挑，随便选，都两块～～ "];
+    [self.view addSubview:paoma];
+    [paoma start];
+    
+    
 }
+
 /**
  *  开始定时器
  */
@@ -80,6 +95,12 @@ static CGFloat cellhight = 40.0;
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     NSLog(@"点击==%ld",(long)indexPath.row);
+    
+    detatilViewController * detatile = [[detatilViewController alloc]init];
+    
+    [self presentViewController:detatile animated:YES completion:^{
+        
+    }];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
