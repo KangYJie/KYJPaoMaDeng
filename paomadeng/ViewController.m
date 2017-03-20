@@ -35,6 +35,13 @@ static CGFloat cellhight = 40.0;
     self.tableviewpm.dataSource =self;
     [self.view addSubview:self.tableviewpm];
     
+    UILabel * maengban = [[UILabel alloc]initWithFrame:CGRectMake(40, 100, 300, 40)];
+    maengban.backgroundColor =[UIColor clearColor];
+    maengban.userInteractionEnabled = YES;
+    [self.view addSubview: maengban];
+    UITapGestureRecognizer *tap= [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction)];
+    [maengban addGestureRecognizer:tap];
+    
     self.arraytext = [[NSArray alloc]init];
     self.arraytext = @[@"时尚1",@"时得到的2",@"时尚空间3",@"时尚空间4",@"时尚空间5",@"时尚空间6",@"时尚空间7",@"时尚空间8",@"时尚空间9",@"时尚空间10"];
     self.hightcell = cellhight;
@@ -49,6 +56,11 @@ static CGFloat cellhight = 40.0;
     
 }
 
+-(void)tapAction{
+    
+    NSLog(@"点击");
+    
+}
 /**
  *  开始定时器
  */
@@ -64,19 +76,21 @@ static CGFloat cellhight = 40.0;
  */
 -(void)nextPage
 {
+//    NSLog(@"当前%f",self.hightcell/cellhight);
+    
     if (self.hightcell >= cellhight*self.arraytext.count) {
         [self.tableviewpm setContentOffset:CGPointMake(0,0 ) animated:NO];
         self.hightcell = cellhight;
     } else {
         
+
         [self.tableviewpm setContentOffset:CGPointMake(0,self.hightcell ) animated:YES];
         
         self.hightcell = self.hightcell + cellhight;
     }
     
     
-    NSLog(@"nextPage");
-}
+    }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.arraytext.count;
 }
