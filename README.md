@@ -1,4 +1,6 @@
     ##类似京东快报
+
+![](http://upload-images.jianshu.io/upload_images/1151129-c16cf9e5a4991764.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
     self.arraytext = [[NSArray alloc]init];
     self.arraytext = @[@"因为我刚好遇见你",@"留下足迹才美丽",@"风吹花落泪如雨",@"因为不想分离",@"因为刚好遇见你",@"留下十年的期许",@"我想我会再记起你",@"我们哭了",@"我们笑着",@"我们抬起头望天空"];
     self.hightcell = cellhight;
