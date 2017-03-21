@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD6EBE401E7FBCED00B8C33B /* WQLPaoMaView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6EBE3F1E7FBCED00B8C33B /* WQLPaoMaView.m */; };
+		CD0F0E341E80B26A001E9133 /* KYJPaoMaDengView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0F0E331E80B26A001E9133 /* KYJPaoMaDengView.m */; };
 		CD77B5F81E7F64D30033A17F /* detatilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD77B5F71E7F64D30033A17F /* detatilViewController.m */; };
 		CDB8578F1E7BBE9300A328AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB8578E1E7BBE9300A328AB /* main.m */; };
 		CDB857921E7BBE9300A328AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB857911E7BBE9300A328AB /* AppDelegate.m */; };
@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CD6EBE3E1E7FBCED00B8C33B /* WQLPaoMaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQLPaoMaView.h; sourceTree = "<group>"; };
-		CD6EBE3F1E7FBCED00B8C33B /* WQLPaoMaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQLPaoMaView.m; sourceTree = "<group>"; };
+		CD0F0E321E80B26A001E9133 /* KYJPaoMaDengView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYJPaoMaDengView.h; sourceTree = "<group>"; };
+		CD0F0E331E80B26A001E9133 /* KYJPaoMaDengView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYJPaoMaDengView.m; sourceTree = "<group>"; };
 		CD77B5F61E7F64D30033A17F /* detatilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detatilViewController.h; sourceTree = "<group>"; };
 		CD77B5F71E7F64D30033A17F /* detatilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detatilViewController.m; sourceTree = "<group>"; };
 		CDB8578A1E7BBE9300A328AB /* paomadeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paomadeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,8 +70,8 @@
 				CDB857941E7BBE9300A328AB /* ViewController.m */,
 				CD77B5F61E7F64D30033A17F /* detatilViewController.h */,
 				CD77B5F71E7F64D30033A17F /* detatilViewController.m */,
-				CD6EBE3E1E7FBCED00B8C33B /* WQLPaoMaView.h */,
-				CD6EBE3F1E7FBCED00B8C33B /* WQLPaoMaView.m */,
+				CD0F0E321E80B26A001E9133 /* KYJPaoMaDengView.h */,
+				CD0F0E331E80B26A001E9133 /* KYJPaoMaDengView.m */,
 				CDB857961E7BBE9300A328AB /* Main.storyboard */,
 				CDB857991E7BBE9300A328AB /* Assets.xcassets */,
 				CDB8579B1E7BBE9300A328AB /* LaunchScreen.storyboard */,
@@ -160,8 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0F0E341E80B26A001E9133 /* KYJPaoMaDengView.m in Sources */,
 				CD77B5F81E7F64D30033A17F /* detatilViewController.m in Sources */,
-				CD6EBE401E7FBCED00B8C33B /* WQLPaoMaView.m in Sources */,
 				CDB857951E7BBE9300A328AB /* ViewController.m in Sources */,
 				CDB857921E7BBE9300A328AB /* AppDelegate.m in Sources */,
 				CDB8578F1E7BBE9300A328AB /* main.m in Sources */,

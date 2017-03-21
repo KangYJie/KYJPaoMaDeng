@@ -1,14 +1,14 @@
 //
-//  WQLPaoMaView.m
-//  WQLPaoMaView
+//  KYJPaoMaDengView.m
+//  paomadeng
 //
-//  Created by WQL on 15/12/28.
-//  Copyright © 2015年 WQL. All rights reserved.
+//  Created by djzx on 2017/3/21.
+//  Copyright © 2017年 kangyuejie. All rights reserved.
 //
 
-#import "WQLPaoMaView.h"
+#import "KYJPaoMaDengView.h"
 
-@interface WQLPaoMaView()
+@interface KYJPaoMaDengView()
 {
     //左侧label的frame
     CGRect currentFrame;
@@ -18,7 +18,7 @@
     
     //存放左右label的数组
     NSMutableArray *labelArray;
-
+    
     //label的高度
     CGFloat labelHeight;
     
@@ -33,21 +33,21 @@
 }
 
 @end
-@implementation WQLPaoMaView
+@implementation KYJPaoMaDengView
 
 - (instancetype)initWithFrame:(CGRect)frame withTitle:(NSString *)title
 {
     self = [super initWithFrame:frame];
     
     if (self) {
-
+        
         showContentView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
         showContentView.clipsToBounds = YES;
         [self addSubview: showContentView];
         
         CGFloat viewHeight = frame.size.height;
         labelHeight = viewHeight;
-
+        
         //循环的时间这里取的是4 此数越大速度越快
         time = title.length/4;
         
@@ -135,7 +135,7 @@
     [self resumeLayer:lableTwo.layer];
     
     isStop = NO;
-
+    
 }
 
 - (void)stop

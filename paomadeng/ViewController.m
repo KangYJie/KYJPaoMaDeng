@@ -8,11 +8,10 @@
 
 #import "ViewController.h"
 #import "detatilViewController.h"
-#import "WQLPaoMaView.h"
-
+#import "KYJPaoMaDengView.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
-    WQLPaoMaView *paoma;
+    KYJPaoMaDengView *paoma;
 }
 
 @property (nonatomic,strong) NSTimer *timer ;
@@ -43,13 +42,13 @@ static CGFloat cellhight = 40.0;
     [maengban addGestureRecognizer:tap];
     
     self.arraytext = [[NSArray alloc]init];
-    self.arraytext = @[@"时尚1",@"时得到的2",@"时尚空间3",@"时尚空间4",@"时尚空间5",@"时尚空间6",@"时尚空间7",@"时尚空间8",@"时尚空间9",@"时尚空间10"];
+    self.arraytext = @[@"因为我刚好遇见你",@"留下足迹才美丽",@"风吹花落泪如雨",@"因为不想分离",@"因为刚好遇见你",@"留下十年的期许",@"我想我会再记起你",@"我们哭了",@"我们笑着",@"我们抬起头望天空"];
     self.hightcell = cellhight;
     self.tableviewpm.separatorStyle = UITableViewCellSelectionStyleNone;
     
     [self startTimer];
     
-    paoma = [[WQLPaoMaView alloc]initWithFrame:CGRectMake(0, 300, self.view.frame.size.width, 50) withTitle:@"全场卖两块，买啥都两块，两块钱，你买不了吃亏，两块钱，你买不了上当，真正的物有所值。拿啥啥便宜 买啥啥不贵，都两块，买啥都两块，全场卖两块，随便挑，随便选，都两块～～ "];
+    paoma = [[KYJPaoMaDengView alloc]initWithFrame:CGRectMake(0, 300, self.view.frame.size.width, 50) withTitle:@"因为我刚好遇见你，留下足迹才美丽，风吹花落泪如雨，因为不想分离，因为刚好遇见你，留下十年的期许，如果再相遇，我想我会再记起你，我们哭了，我们笑着，我们抬起头望天空，星星还有几颗，我们唱着时间的歌，才懂得相互拥抱 "];
     [self.view addSubview:paoma];
     [paoma start];
     
@@ -103,6 +102,7 @@ static CGFloat cellhight = 40.0;
     UITableViewCell *cell = [[UITableViewCell alloc] init];
     cell.backgroundColor = [UIColor colorWithRed:0.61 green:0.60 blue:0.61 alpha:1.00];
     cell.textLabel.text = self.arraytext[indexPath.row];
+    cell.textLabel.textAlignment = NSTextAlignmentCenter;
     return cell;
 }
 
